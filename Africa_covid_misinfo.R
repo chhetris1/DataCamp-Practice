@@ -1,3 +1,13 @@
 library(tidyverse)
 covid_africa <- read_csv("Perception of COVID19 Disease.csv")
 View(covid_africa)
+glimpse(covid_africa)
+attach(covid_africa)
+covid_africa$Gender <- factor(covid_africa$Gender)
+class(covid_africa$Gender)
+covid_africa$Age_class <- factor(covid_africa$`Age class`, levels = c("18-24"))
+class(covid_africa$Age_class)
+levels(covid_africa$Age_class)
+if
+covid_africa$Religion <- factor(covid_africa$`Religion faith/belief`)
+levels(covid_africa$Religion)
